@@ -1,0 +1,208 @@
+1.How to check your installed Git version?
+ans: Git --version
+
+2.Which command installs Git on Ubuntu?
+ans: sudo apt-get install git
+
+3.How to set your Git user name globally?
+ans: git config --global user.name "Your Name"
+
+4.How to set your Git email to student@example.com?
+ans: git config --global user.email "student@example.com"
+
+5.Which command lists all your Git configuration settings?
+ans: git config --list
+
+6.How to change into your new project?
+ans:  cd myproject
+
+7.How to Initialize Git on the current folder?
+ans: git init 
+
+8.What is a Git repository?
+ans: A folder that Git tracks for changes.
+
+9.Discribe the correct command to list files in your project directory
+ans:  ls index.html
+
+10.How to Check the status of the Git?
+ans: git status
+
+11. What does it mean if a file is untracked in Git?
+ans: Git does not know about this file yet.
+
+12.What is the purpose of the staging area in Git?
+ans: To select which changes will go into the next commit.
+
+13.What the correct command to stage a file.
+ans: git add index.html
+
+14.Stage all new, modified, and deleted files. Use the shorthand command
+ans: git add -A
+
+15.what is the correct flag to add a commit message?
+ans: To add a commit message in Git, you should use the -m flag. 
+     This flag allows you to specify a commit message directly in the command line. Here is how you can use it
+	         git commit -m "Your commit message here"
+			 
+16.How to Commit the updated files directly, skipping the staging environment?
+ans: To commit updated files directly in Git, skipping the staging environment, you can use the -a option with the git commit command.
+ This option automatically stages every file that is already tracked before committing, allowing you to skip the git add part. 
+ Here is how you can do it	
+                            git commit -a -m "Your commit message here"
+							
+17. What does a Git commit do?
+ans: Saves a snapshot of your project with a message.
+
+18.How to view the history of commits for the repository?
+ans:To view the history of commits for a Git repository, you can use the git log command. 
+       This command shows a list of commits made in the repository, along with details such as the commit hash, author, date, and commit message.
+	   git log
+	   
+19.discribe the correct flag to create an annotated tag with a message?
+ans: To create an annotated tag with a message in Git, you should use the -a flag along with the -m flag to specify the message. 
+     Annotated tags store additional information such as the tagger's name, email, date, and a message	   
+	  git tag -a <tagname> -m "Your tag message here"
+ 
+20.What is the main purpose of a Git tag?
+ans: To mark important points or releases in the project history. 
+
+21.Discribe the correct flag to show a summary of all commits
+ans: you can use the --oneline flag, which shows each commit on a single line
+                          git log --oneline
+
+22.Show the changes introduced in the most recent commit
+ans: git show HEAD
+
+23.Which command shows only commits from the last week?
+ans: git log --since="1 week ago"
+
+24.Show all git possible commands in command line?
+ans.git help --all
+
+25.Which command shows a quick summary of options for git commit?
+ans: git commit -h
+
+26.Which command switches to an existing branch?
+ans: git checkout branch-name
+
+27.Which command we used to create a new branch called hello-world-images.
+ans: git branch hello-world-images
+
+28.List the existing branches?
+ans: git branch
+
+29.Which command we used to merge the hello-you branch into the current branch.
+ans: git merge  hello-you
+
+30.Remove the hello-you branch from the local repository
+ans: git branch -d  hello-you
+
+31.Which command aborts a merge in progress?
+ans: git merge --abort
+
+32.What does a merge conflict mean?
+ans: There are incompatible changes in both branches that must be resolved manually.
+
+33.Which command we used to move changes from the working directory to the staging area?
+ans:git ad .
+
+34.Which area in Git holds changes before they are committed?
+ans: Staging Area (Index)
+
+35.What command saves staged changes to your local repository?
+ans: git commit
+
+36.Which command shows the current status of files in your working directory and staging area?
+ans: git status
+
+37. Which command we used  to run before git push to avoid conflicts?
+ans: git pull
+
+38.Why should you write clear commit messages?
+ans: To help you and your team understand the project history.
+
+39.Which file should you use to prevent tracking of build artifacts, logs, and secrets?
+ans: .gitignore
+
+40.Discribe the correct algorithm to generate a new SSH key pair?
+ans:  ssh-keygen -t rsa -b 4096 -C "your@email.com"
+
+41.Which command adds your private SSH key to the SSH agent?
+ans: ssh-add ~/.ssh/id_rsa
+
+42.What should you NEVER do with your private SSH key?
+ans: we dont share it with anyone
+
+43.Which file do you add to your GitHub/Bitbucket/GitLab account for SSH access?
+ans: The public key (e.g., id_rsa.pub)
+
+44: Discribe subcommand to add a new remote?
+ans: git remote add origin git@github.com:username/repo.git
+
+45.How do you update the URL for an existing remote named 'origin'?
+ans: git remote set-url origin git@github.com:username/repo.git
+
+46.Check if your SSH connection is set up?
+ans:  ssh -T git@github.com
+
+47.Which command downloads new data from a remote repository but does NOT change your working files or branches?
+ans:To download new data from a remote repository without changing your working files or branches, you can use the "git fetch" command
+
+48.Which  command we used to upload local commits to the remote repository?
+ans:git push origin
+
+49.Which action is always required before you can push new changes to a remote repository?
+ans:Before you can push new changes to a remote repository, you must commit your changes locally. 
+    This involves using the git commit command to save your changes in the local repository. 
+    Only after committing your changes can you push them to the remote repository using the git push command
+	
+50.Push all local tags to the remote repository:
+ans: git push --tags
+
+52. Which command we used to switch to a branch called 'branch-name'?
+ans:git switcht branch-name	
+
+53.Delete a branch named feature from the remote origin
+ans: git push origin --delete feature
+
+54.Which command creates a new branch and switches to it?
+ans: git switch -c branch-name
+
+55.How do you delete a branch named 'feature' locally?
+ans: git branch -d feature
+
+56.Which command lists all local and remote branches?
+ans:    git branch -a
+
+57.List only remote branches of the current Git
+ans: git branch -r
+
+58.Write the command to push a branch named feature to the remote origin?
+ans: git push origin feature
+
+59.Which command we used to push all local branches to the remote 'origin?
+ans: git push --all origin
+
+60.Clone the repository https://abc.com/x/y.git to a folder named "newlife"
+ans:git clone https://abc.com/x/y.git newlife
+
+61.What does the 'git clone' command do?
+ans: Copies a remote repository to your local machine
+
+62.After pushing your changes to your fork, what is the next step to suggest your changes to the original repository?
+ans:   Create a pull/merge request
+
+63.Which command we used to revert the latest commit?
+ans: git revert HEAD
+
+64.revert the latest commit, skipping the commit message editor
+ans: git revert HEAD --no-edit
+
+65.What does 'git revert' do?
+ans: Creates a new commit that undoes the changes of a previous commit
+
+66.What does 'git reset --hard' do?
+ans: Moves HEAD to a commit and deletes all changes in the working directory and index.
+
+67
