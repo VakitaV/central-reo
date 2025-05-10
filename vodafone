@@ -1,4 +1,6 @@
 FROM ubuntu
 RUN apt update -y
 RUN apt install -y
+WORKDIR /tmp
+ENV myname siva
 RUN echo "hello siva" > /tmp/saifile
